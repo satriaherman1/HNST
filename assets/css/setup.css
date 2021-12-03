@@ -4,6 +4,42 @@
     --grayColor : rgba(143, 143, 143, 1);
 }
 
+@font-face {
+    font-family:'NeutrifPro' ;
+    src: url('../font/NeutrifPro-Regular.woff')
+         format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family:'NeutrifPro' ;
+    src: url('../font/NeutrifPro-Medium.ttf')
+         format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family:'NeutrifPro' ;
+    src: url('../font/NeutrifPro-SemiBold.ttf')
+         format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family:'NeutrifPro' ;
+    src: url('../font/NeutrifPro-SemiBold.ttf')
+         format('truetype');
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'NeutrifPro';
+    font-weight: 700;
+}
+
+body{
+    font-family: 'NeutrifPro';
+    font-weight: 400;
+}
+
 h1{
     font-size: 32px;
 }
