@@ -2,15 +2,16 @@ $('#slickReels').slick({
   centerMode: true,
   centerPadding: '10px',
   slidesToShow: 3,
-  dots : true,
+  dots : false,
   responsive: [
     {
       breakpoint: 960,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 2
+        slidesToShow: 2,
+        dots: false
       }
     },
     {

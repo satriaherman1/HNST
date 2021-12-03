@@ -38,7 +38,7 @@ header{
 
 .learn{
     background-color: #F9F9FB;
-    padding: 50px 0;
+    padding: 80px 0;
     background-image: url('../img/decoration-bg.svg');
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -141,5 +141,50 @@ footer{
 
     .footer-list{
         background: none;
+    }
+}
+
+
+
+/* slick */
+#slickReels > button{
+    position: absolute;
+   
+}
+
+#slickReels{
+    padding: 40px 0;
+}
+
+/* #slickReels */
+
+#slickReels > button:first-child{
+    top: 0%;
+    left: 83%;
+    border-radius: 100px;
+    background-image: url('../img/icons/arrow-left.svg');
+    background-position: center center;
+    background-size: cover;
+}
+#slickReels > button:last-child{
+    top: 0%;
+    left: 92%;
+    border-radius: 100px;
+    background-image: url('../img/icons/arrow-right.svg');
+    background-position: center center;
+    background-size: cover;
+}
+#slickReels > button::before{
+    font-size: 0;
+}
+
+@media screen and (min-width:768px) {
+    #slickReels > button:first-child{
+        top: 107%;
+        left: 0%;
+    }
+    #slickReels > button:last-child{
+        top: 107%;
+        left: 4%;
     }
 }
