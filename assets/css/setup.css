@@ -1,0 +1,27 @@
+:root{
+    --primaryColor : #FDA529;
+    --darkColor : #362D1B;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+
+.w-fit{
+    width: fit-content;
+    width: -moz-fit-content;
+}
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 62px;
+    }
+
+    h2{
+        font-size: 42px;
+    }
+}

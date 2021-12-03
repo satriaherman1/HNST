@@ -1,0 +1,20 @@
+.button{
+    border-radius: 100px;
+    padding: 12px 32px;
+    border: none;
+}
+
+.button-primary{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.button-dark{
+    background-color: var(--darkColor);
+    color: white;
+}
+
+
+.button-transparent{
+    background: none;
+}

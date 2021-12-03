@@ -1,0 +1,33 @@
+.color-primary{
+    color: var(--primaryColor);
+}
+
+.text-22{
+    font-size: 22px;
+}
+
+.color-dark{
+    color: var(--darkColor);
+}
+
+.font-medium{
+    font-weight: 500;
+}
+
+.text-16{
+    font-size: 16px;
+}
+
+.text-20{
+    font-size: 20px;
+}
+
+.text-blue{
+    color: rgba(77, 169, 255, 1);
+}
+
+@media screen and (min-width:768px) {
+    .text-22{
+        font-size: 22px;
+    }
+}
