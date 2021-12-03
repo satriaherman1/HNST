@@ -29,6 +29,9 @@ nav{
 
 header{
     padding: 40px 0 79px 0;
+    background-image: url('../img/decoration-bg.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 
@@ -36,6 +39,16 @@ header{
 .learn{
     background-color: #F9F9FB;
     padding: 50px 0;
+    background-image: url('../img/decoration-bg.svg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.book{
+    background-image: url('../img/decoration-bg.svg');
+    background-position: 20% center;
+    background-repeat: no-repeat;
+
 }
 
 .reels-cover video{
@@ -118,7 +131,7 @@ footer{
     }
 
     header{
-        padding: 253px 0 79px 0;
+        padding: 253px 0 197px 0;
     }
 
     .finance-personal{
