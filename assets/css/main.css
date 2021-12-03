@@ -4,6 +4,14 @@
 @import url('component/input.css');
 @import url('component/select.css');
 
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 nav{
     background: var(--primaryColor);
     padding: 30px 20px 140px 0px;
@@ -80,9 +88,11 @@ header{
 
 .instructor-box{
     background-color: var(--primaryColor);
-    padding: 100px 35px;
-    border-top-left-radius: 170px;
-    border-top-right-radius: 170px;
+    padding: 120px 35px;
+    border-top-left-radius: 240px;
+    border-top-right-radius: 240px;
+    width: 120%;
+    margin-left: -11%;
 }
 
 footer{
@@ -108,4 +118,8 @@ footer{
         padding: 253px 0 79px 0;
     }
 
+    .finance-personal{
+        padding-bottom: 10px;
+        border-bottom: 4px solid var(--primaryColor);
+    }
 }
