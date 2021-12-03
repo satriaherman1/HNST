@@ -26,8 +26,12 @@
     color: rgba(77, 169, 255, 1);
 }
 
+.color-gray{
+    color: var(--grayColor);
+}
+
 @media screen and (min-width:768px) {
-    .text-22{
+    .text-md-22{
         font-size: 22px;
     }
 }

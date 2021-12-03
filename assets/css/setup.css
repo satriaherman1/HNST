@@ -1,6 +1,7 @@
 :root{
     --primaryColor : #FDA529;
     --darkColor : #362D1B;
+    --grayColor : rgba(143, 143, 143, 1);
 }
 
 h1{
