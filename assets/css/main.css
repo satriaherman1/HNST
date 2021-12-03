@@ -122,4 +122,8 @@ footer{
         padding-bottom: 10px;
         border-bottom: 4px solid var(--primaryColor);
     }
+
+    .footer-list{
+        background: none;
+    }
 }
