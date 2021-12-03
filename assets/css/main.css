@@ -112,6 +112,9 @@ footer{
         background-color: var(--primaryColor);
         padding: 80px 35px;
         border-radius: 20px;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header{
