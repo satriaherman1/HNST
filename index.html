@@ -15,6 +15,19 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
 </head>
 
 <body>
@@ -67,10 +80,12 @@
                     <div id="slickReels">
                         <div class="reels-cover">
                             <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
+                                <div class="player-box" onclick="playVideo(this)" onmouseenter="show nbv">
                                     <i class="fas fa-play"></i>
                                 </div>
-                                <video src="assets/video/reels1.mp4"></video>
+                                <video poster="assets/img/thumbnail1.png">
+                                    <source src="assets/video/reels1.mp4">
+                                </video>
                             </div>
                         </div>
                         <div class="reels-cover">
@@ -78,7 +93,9 @@
                                 <div class="player-box" onclick="playVideo(this)">
                                     <i class="fas fa-play"></i>
                                 </div>
-                                <video src="assets/video/reels2.mp4"></video>
+                                <video>
+                                    <source src="assets/video/reels2.mp4">
+                                </video>
                             </div>
                         </div>
                         <div class="reels-cover">
@@ -87,54 +104,6 @@
                                     <i class="fas fa-play"></i>
                                 </div>
                                 <video src="assets/video/reels3.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="reels-cover">
-                            <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <video src="assets/video/reels4.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="reels-cover">
-                            <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <video src="assets/video/reels5.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="reels-cover">
-                            <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <video src="assets/video/reels6.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="reels-cover">
-                            <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <video src="assets/video/reels7.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="reels-cover">
-                            <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <video src="assets/video/reels8.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="reels-cover">
-                            <div class="ml-3">
-                                <div class="player-box" onclick="playVideo(this)">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                                <video src="assets/video/reels9.mp4"></video>
                             </div>
                         </div>
                     </div>
@@ -446,7 +415,6 @@
                                 <button class="button button-primary mt-3 ms-auto d-block"
                                     data-bs-dismiss="modal">Submit</button>
                             </div>
-
                         </div>
                     </div>
                 </div>
