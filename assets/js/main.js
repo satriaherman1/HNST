@@ -42,3 +42,31 @@ const playVideo = (el) => {
   }
   
 }
+
+const textList = ['Chess ♟️' , 'Econ 101 📊', 'Photography 📷', 'Guitar 🎸' , 'YouTube ▶️',
+                  'Writing ✍️' ,'Speed Reading 📚', 'Personal Finance 💸' , 'Software 🧑‍💻',
+                 'Piano 🎹', 'Français 🇫🇷' , 'Drawing 🎨', 'Copyright Law ⚖️' , 'Poker 🃏',
+                 'Filmmaking 🎬']
+let indexTextList = 0;
+
+const changeTextListUp = () => {
+  el = document.querySelector('.finance-personal')
+  el.classList.remove('downAnimation')
+  el.classList.add('upAnimation')
+  setTimeout(() => changeTextListDown(), 1000)
+}
+const changeTextListDown = () => {
+  el.classList.remove('upAnimation')
+  el.classList.add('downAnimation')
+  el = document.querySelector('.finance-personal')
+  el.textContent = textList[indexTextList];
+  if(indexTextList >= textList.length){
+    indexTextList = 0;
+  }
+  else{
+    indexTextList += 1
+  }
+}
+
+setInterval(changeTextListUp, 4000)
+

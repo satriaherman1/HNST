@@ -3,6 +3,16 @@
 @import url('component/button.css');
 @import url('component/input.css');
 @import url('component/select.css');
+@import url('plugin/animation.css');
+
+/* textillate css */
+.finance-personal span{
+    display: flex;
+}
+
+.finance-personal span span{
+    margin-left: 6px;
+}
 
 html{
     overflow-x: hidden;
@@ -67,8 +77,8 @@ header{
     content: '';
     width: 100%;
     height: 100%;
-    background: #333;
-    opacity: .2;
+    /* background: #333; */
+    /* opacity: .2; */
     position: absolute;
     top: 0;
     left: 0;
