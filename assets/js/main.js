@@ -82,18 +82,10 @@ const changeTextListUp = () => {
   
 }
 
-// const changeTextListDown = () => {
-//   el.classList.remove('upAnimation')
-//   el.classList.add('downAnimation')
-//   el = document.querySelector('.finance-personal')
-//   el.textContent = textList[indexTextList];
-//   if(indexTextList >= textList.length){
-//     indexTextList = 0;
-//   }
-//   else{
-//     indexTextList += 1
-//   }
-// }
-
 setInterval(changeTextListUp, 2000)
 
+
+
+const maxCharChange =  (el) => {
+  console.log(el.value.length)
+}
