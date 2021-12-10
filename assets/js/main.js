@@ -57,8 +57,18 @@ let indexTextList = 0;
 const changeTextListUp = () => {
   el = [...document.querySelectorAll('.finance-personal')]
   const slider = document.querySelector('.slider')
+  let marginTop
+  if(window.innerWidth > 768){
+    marginTop = (82 * 2 + 21)
+  }
+  else{
+    marginTop = (44 * 2 + 5)
+  }
   if(indexTextList >= textList.length - 1){
       textList.map((text) => {
+        if(window.innerWidth > 768){
+          marginTop -= 0.08
+        }
         slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
       })
       indexTextList = 0
@@ -67,13 +77,7 @@ const changeTextListUp = () => {
     indexTextList += 1;
   }
   const sliderStyle = getComputedStyle(slider)
-  let marginTop
-  if(window.innerWidth > 768){
-    marginTop = (82 * 2 + 21)
-  }
-  else{
-    marginTop = (44 * 2 + 5)
-  }
+  
   slider.style.marginTop = parseFloat(sliderStyle.getPropertyValue('margin-top')) - marginTop + "px"
   
 }
