@@ -49,7 +49,7 @@ const textList = ['Chess ♟️' , 'Econ 101 📊', 'Photography 📷', 'Guitar 
                  'Filmmaking 🎬']
 const slideContainer = document.querySelector('.slide-container .slider')
 textList.map((text) => {
-  slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal mt-2">${text}</h1>`
+  slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
 })
 
 let indexTextList = 0;
@@ -72,7 +72,7 @@ const changeTextListUp = () => {
     marginTop = (82 * 2 + 21)
   }
   else{
-    marginTop = (82 * 2 + 24)
+    marginTop = (44 * 2 + 5)
   }
   slider.style.marginTop = parseFloat(sliderStyle.getPropertyValue('margin-top')) - marginTop + "px"
   
