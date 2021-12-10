@@ -14,6 +14,14 @@
     margin-left: 6px;
 }
 
+
+.tm{
+    position: absolute;
+    top: 10%;
+    font-size: 70%;
+}
+
+
 html{
     overflow-x: hidden;
 }
@@ -130,7 +138,10 @@ footer{
 }
 
 @media screen and (min-width : 768px) {
-
+    .tm{
+        font-size: 50%;
+       
+    }
     .instructor-box{
         background-color: var(--primaryColor);
         padding: 80px 35px;
