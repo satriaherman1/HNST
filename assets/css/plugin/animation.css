@@ -1,11 +1,23 @@
+.slide-container{
+    height: 44px;
+    overflow-y: hidden;
+}
+
+
 .upAnimation{
-    animation: up 2s 1;
+    animation: up 1s 1;
     display: inline-block;
 }
 
 .downAnimation{
-    animation: down 2s 1;
+    animation: down 1s 1;
     display: inline-block;
+}
+
+.slider{
+    /* height: 88px; */
+    height: 100%;
+    transition: .3s;
 }
 
 @keyframes up {
@@ -21,11 +33,18 @@
 
 @keyframes down {
     from{
-        opacity: 0;
-        transform: translateY(-80%);
+        opacity: 1;
+        transform: translateY(20%);
     }
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .slide-container{
+        height: 82px;
     }
 }
