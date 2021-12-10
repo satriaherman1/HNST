@@ -59,7 +59,7 @@ const changeTextListUp = () => {
   const slider = document.querySelector('.slider')
   if(indexTextList >= textList.length - 1){
       textList.map((text) => {
-        slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal mt-2">${text}</h1>`
+        slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
       })
       indexTextList = 0
     }
