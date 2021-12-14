@@ -157,6 +157,7 @@ footer{
 
     .finance-personal{
         padding-bottom: 10px;
+        /* padding-top: 1px; */
         /* border-bottom: 4px solid var(--primaryColor); */
     }
 

@@ -65,10 +65,10 @@ const changeTextListUp = () => {
     marginTop = (44 * 2 + 5)
   }
   if(indexTextList >= textList.length - 1){
+    if(window.innerWidth > 768){
+      marginTop += 0.3
+    }
       textList.map((text) => {
-        if(window.innerWidth > 768){
-          marginTop -= 0.08
-        }
         slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
       })
       indexTextList = 0
@@ -87,5 +87,7 @@ setInterval(changeTextListUp, 2000)
 
 
 const maxCharChange =  (el) => {
-  console.log(el.value.length)
+  if(el.length.value < 300){
+    
+  }
 }
