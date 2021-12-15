@@ -59,7 +59,7 @@ const changeTextListUp = () => {
   const slider = document.querySelector('.slider')
   let marginTop
   if(window.innerWidth > 768){
-    marginTop = (82 * 2 + 20.8)
+    marginTop = (82 * 2 + 20.75)
   }
   else{
     marginTop = (44 * 2 + 5)
