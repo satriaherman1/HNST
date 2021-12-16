@@ -100,7 +100,6 @@ const confirmSubmit = () => {
     confirmButtonText: 'Submit',
     denyButtonText: `Not Yet`,
   }).then(result => {
-    console.log(result)
     if(result.isConfirmed){
       // $('#smallForm').removeClass('.show')
       // $('#smallForm').css({
