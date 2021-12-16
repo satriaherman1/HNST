@@ -42,13 +42,26 @@
         </div>
     </nav>
     <header>
-        <div class="container">
-            <h1 class="text-center font-bold position-relative">How Not To Suck At<span class="tm">&trade;</span></h1>
-            <div class="slide-container d-flex flex-column justify-content-center">
-                <div class="slider">
-
-                </div>
-            </div>
+        <div class="container home-text">
+            <h1 class="text-center text-out font-bold position-relative">How Not To Suck At<span
+                    class="tm">&trade;</span></h1>
+            <p class="animate-text text-center color-primary">
+                <span class="slide-text">Chess ♟️</span>
+                <span class="slide-text">Econ 101 📊</span>
+                <span class="slide-text">Photography 📷</span>
+                <span class="slide-text">Guitar 🎸</span>
+                <span class="slide-text">YouTube ▶️</span>
+                <span class="slide-text">Writing ✍️</span>
+                <span class="slide-text">Speed Reading 📚</span>
+                <span class="slide-text">Personal Finance 💸</span>
+                <span class="slide-text">Software 🧑‍💻</span>
+                <span class="slide-text">Piano 🎹</span>
+                <span class="slide-text">Français 🇫🇷</span>
+                <span class="slide-text">Drawing 🎨</span>
+                <span class="slide-text">Copyright Law ⚖️</span>
+                <span class="slide-text">Poker 🃏</span>
+                <span class="slide-text">Filmmaking 🎬</span>
+            </p>
             <br>
             <p class="text-center text-22 d-none d-md-block">Nothing is complicated.</p>
             <br>
@@ -453,6 +466,39 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/component/custom-select.js"></script>
+    <script>
+        const txts = document.querySelector(".animate-text").children,
+            txtsLen = txts.length;
+        let index = 0;
+        const textInTimer = 3000,
+            textOutTimer = 2800;
+
+        function animateText() {
+            for (let i = 0; i < txtsLen; i++) {
+                txts[i].classList.remove("text-in", "text-out");
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function () {
+                txts[index].classList.add("text-out");
+            }, textOutTimer)
+
+            setTimeout(function () {
+
+                if (index == txtsLen - 1) {
+                    index = 0;
+                }
+                else {
+                    index++;
+                }
+                animateText();
+            }, textInTimer);
+        }
+
+        window.onload = animateText;
+
+    </script>
+
 </body>
 
 </html>

@@ -43,46 +43,46 @@ const playVideo = (el) => {
   
 }
 
-const textList = ['Chess ♟️' , 'Econ 101 📊', 'Photography 📷', 'Guitar 🎸' , 'YouTube ▶️',
-                  'Writing ✍️' ,'Speed Reading 📚', 'Personal Finance 💸' , 'Software 🧑‍💻',
-                 'Piano 🎹', 'Français 🇫🇷' , 'Drawing 🎨', 'Copyright Law ⚖️' , 'Poker 🃏',
-                 'Filmmaking 🎬']
-const slideContainer = document.querySelector('.slide-container .slider')
-textList.map((text) => {
-  slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
-})
+// const textList = ['Chess ♟️' , 'Econ 101 📊', 'Photography 📷', 'Guitar 🎸' , 'YouTube ▶️',
+//                   'Writing ✍️' ,'Speed Reading 📚', 'Personal Finance 💸' , 'Software 🧑‍💻',
+//                  'Piano 🎹', 'Français 🇫🇷' , 'Drawing 🎨', 'Copyright Law ⚖️' , 'Poker 🃏',
+//                  'Filmmaking 🎬']
+// const slideContainer = document.querySelector('.slide-container .slider')
+// textList.map((text) => {
+//   slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
+// })
 
-let indexTextList = 0;
+// let indexTextList = 0;
 
-const changeTextListUp = () => {
-  el = [...document.querySelectorAll('.finance-personal')]
-  const slider = document.querySelector('.slider')
-  let marginTop
-  if(window.innerWidth > 768){
-    marginTop = (82 * 2 + 20.75)
-  }
-  else{
-    marginTop = (44 * 2 + 5)
-  }
-  if(indexTextList >= textList.length - 1){
-    if(window.innerWidth > 768){
-      marginTop += 0.3
-    }
-      textList.map((text) => {
-        slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
-      })
-      indexTextList = 0
-    }
-  else{
-    indexTextList += 1;
-  }
-  const sliderStyle = getComputedStyle(slider)
+// const changeTextListUp = () => {
+//   el = [...document.querySelectorAll('.finance-personal')]
+//   const slider = document.querySelector('.slider')
+//   let marginTop
+//   if(window.innerWidth > 768){
+//     marginTop = (82 * 2 + 20.75)
+//   }
+//   else{
+//     marginTop = (44 * 2 + 5)
+//   }
+//   if(indexTextList >= textList.length - 1){
+//     if(window.innerWidth > 768){
+//       marginTop += 0.3
+//     }
+//       textList.map((text) => {
+//         slideContainer.innerHTML += `<h1 class="color-primary w-fit mx-auto finance-personal ">${text}</h1>`
+//       })
+//       indexTextList = 0
+//     }
+//   else{
+//     indexTextList += 1;
+//   }
+//   const sliderStyle = getComputedStyle(slider)
   
-  slider.style.marginTop = parseFloat(sliderStyle.getPropertyValue('margin-top')) - marginTop + "px"
+//   slider.style.marginTop = parseFloat(sliderStyle.getPropertyValue('margin-top')) - marginTop + "px"
   
-}
+// }
 
-setInterval(changeTextListUp, 2000)
+// setInterval(changeTextListUp, 2000)
 
 
 

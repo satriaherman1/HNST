@@ -1,50 +1,45 @@
-.slide-container{
-    height: 44px;
-    overflow-y: hidden;
+.animate-text span.text-in{
+    display: block;
+	animation: textIn .5s ease;
 }
 
+.animate-text span.text-out{
+    animation: textOut .5s ease;
+}
 
-.upAnimation{
-    animation: up 1s 1;
+.animate-text{
+    margin:0;
+	overflow: hidden;
+    /* position: relative; */
+    /* height: 60px; */
+}
+
+.animate-text span{
+    /* font-size: 40px; */
+    /* color:#ff2c45; */
+    height: fit-content;
+    height: -moz-fit-content;
+    font-weight: 700;
     display: inline-block;
+    line-height: fit-content;
+    line-height: -moz-fit-content;
+    display: none;
 }
 
-.downAnimation{
-    animation: down 1s 1;
-    display: inline-block;
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
 }
 
-.slider{
-    /* height: 88px; */
-    height: 100%;
-    transition: .3s;
-}
-
-@keyframes up {
-    from{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to{
-        opacity: 0;
-        transform: translateY(-80%);
-    }
-}
-
-@keyframes down {
-    from{
-        opacity: 1;
-        transform: translateY(20%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-@media screen and (min-width:768px) {
-    .slide-container{
-        height: 82px;
-    }
-}
