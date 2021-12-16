@@ -146,17 +146,17 @@
                 <h2 class="text-white text-center">Want to become a course instructor?</h2>
                 <br>
                 <div class="d-flex justify-content-center">
-                    <button class="button button-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button class="button button-dark" data-bs-toggle="modal" data-bs-target="#smallForm">
                         Apply Now
                     </button>
 
 
                     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    <div class="modal fade" id="smallForm" data-bs-backdrop="static" data-bs-keyboard="false"
                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content py-2 px-3">
-                                <button type="button" class="btn-close d-block ms-auto my-3 me-2"
+                                <button type="button" class="btn-close dismiss d-block ms-auto my-3 me-2"
                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                 <div class="modal-body">
                                     <div class="row">
@@ -229,9 +229,9 @@
                                         </div>
                                     </div>
 
-
-                                    <button class="button button-primary mt-3 ms-auto d-block" data-bs-dismiss="modal"
-                                        onclick="return confirm('are you sure to submit?')">Submit</button>
+                                    <button class="dismiss d-none" data-bs-dismiss="modal"></button>
+                                    <button class="button button-primary mt-3 ms-auto d-block"
+                                        onclick="confirmSubmit()">Submit</button>
                                 </div>
 
                             </div>
@@ -374,7 +374,8 @@
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content py-2 px-3">
-
+                            <button type="button" class="btn-close dismiss d-block ms-auto my-3 me-2"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -430,8 +431,9 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <button class="button button-primary mt-3 ms-auto d-block"
-                                    data-bs-dismiss="modal">Submit</button>
+                                    onclick="confirmSubmit()">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -448,6 +450,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/component/custom-select.js"></script>
 </body>

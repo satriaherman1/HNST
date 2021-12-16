@@ -91,3 +91,32 @@ const maxCharChange =  (el) => {
     
   }
 }
+
+const confirmSubmit = () => {
+  Swal.fire({
+    title: 'Do you want to submit this form?',
+    showDenyButton: true,
+    // showCancelButton: true,
+    confirmButtonText: 'Submit',
+    denyButtonText: `Not Yet`,
+  }).then(result => {
+    console.log(result)
+    if(result.isConfirmed){
+      // $('#smallForm').removeClass('.show')
+      // $('#smallForm').css({
+      //   'display' : 'none'
+      // })
+      const modal = document.querySelectorAll('.modal');
+      const modalBackdrop = document.querySelectorAll('.modal-backdrop');
+      modal.forEach((m) => {
+        m.style.display = "none"
+        $(m).find('.dismiss').trigger({
+          type : 'click'
+        })
+      })
+      modalBackdrop.forEach(m => {
+        m.classList.remove('show')
+      })
+    }
+  })
+}
