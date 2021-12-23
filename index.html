@@ -156,21 +156,21 @@
                         <div class="col-md-6">
                           <div class="mt-3 d-flex flex-column">
                             <label for="" class="form-label">Your Name</label>
-                            <input type="text" placeholder="Johnny Appleseed" class="custom-input-rounded" maxlength="300" />
+                            <input type="text" name="name" placeholder="Johnny Appleseed" class="custom-input-rounded" maxlength="300" />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="mt-3 d-flex flex-column">
                             <label for="" class="form-label">Your Username</label>
-                            <input type="text" placeholder="YourName@gmail.com" class="custom-input-rounded" maxlength="300" />
+                            <input type="email" name="username" placeholder="YourName@gmail.com" class="custom-input-rounded" maxlength="300" />
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="mt-3 d-flex flex-column">
                             <label for="" class="form-label">What course topic would you like to teach?</label>
                             <div class="position-relative custom-select-field mt-3">
-                              <select class="custom-select" onchange="selectClick(this)" onclick="selectClick(this)">
-                                <option value="" disabled selected>Chess ♟️</option>
+                              <select class="custom-select" name="topic" onchange="selectClick(this)" onclick="selectClick(this)">
+                                <option value="Chess ♟️" disabled selected>Chess ♟️</option>
                                 <option value="Piano 🎹">Piano 🎹</option>
                                 <option value="Blackjack 🃏">Blackjack 🃏</option>
                                 <option value="Bodybuilding 🏋">Bodybuilding 🏋</option>
@@ -197,14 +197,22 @@
                         <div class="col-md-12">
                           <div class="mt-3 d-flex flex-column">
                             <label for="" class="form-label">Why are you the best person to teach this course?</label>
-                            <textarea name="" placeholder="I’m the best person to teach this course because ..." class="custom-input-rounded" id="" cols="30" rows="10" maxlength="300"></textarea>
+                            <textarea
+                              name="reason"
+                              placeholder="I’m the best person to teach this course because ..."
+                              class="custom-input-rounded"
+                              id=""
+                              cols="30"
+                              rows="10"
+                              maxlength="300"
+                            ></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="mt-3 d-flex flex-column">
                             <label for="" class="form-label">Do you have a YouTube channel or large social media following?</label>
                             <textarea
-                              name=""
+                              name="social_media"
                               placeholder="Yeah! I have XYZ subscribers. Here’s the URL to my channel: YouTube.com/c/HowNotToSuckAt"
                               class="custom-input-rounded"
                               id=""
