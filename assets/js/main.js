@@ -40,34 +40,6 @@ const playVideo = (el) => {
   }
 };
 
-const maxCharChange = (el) => {
-  if (el.length.value < 300) {
-  }
-};
-
-const confirmSubmit = () => {
-  Swal.fire({
-    title: "Do you want to submit this form?",
-    showDenyButton: true,
-    confirmButtonText: "Submit",
-    denyButtonText: `Not Yet`,
-  }).then((result) => {
-    if (result.isConfirmed) {
-      const modal = document.querySelectorAll(".modal");
-      const modalBackdrop = document.querySelectorAll(".modal-backdrop");
-      modal.forEach((m) => {
-        m.style.display = "none";
-        $(m).find(".dismiss").trigger({
-          type: "click",
-        });
-      });
-      modalBackdrop.forEach((m) => {
-        m.classList.remove("show");
-      });
-    }
-  });
-};
-
 window.addEventListener("load", function () {
   const loading = document.getElementById("loading");
   const loadingContainer = document.querySelector(".loading-container");
