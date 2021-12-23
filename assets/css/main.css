@@ -1,212 +1,203 @@
-@import url('setup.css');
-@import url('utils/text.css');
-@import url('component/button.css');
-@import url('component/input.css');
-@import url('component/select.css');
-@import url('plugin/animation.css');
-
+@import url("setup.css");
+@import url("utils/text.css");
+@import url("component/button.css");
+@import url("component/input.css");
+@import url("component/select.css");
+@import url("plugin/animation.css");
+@import url("plugin/loading.css");
 /* textillate css */
-.finance-personal span{
-    display: flex;
+.finance-personal span {
+  display: flex;
 }
 
-.finance-personal span span{
-    margin-left: 6px;
+.finance-personal span span {
+  margin-left: 6px;
 }
 
-
-.tm{
-    position: absolute;
-    top: 10%;
-    font-size: 70%;
+.tm {
+  position: absolute;
+  top: 10%;
+  font-size: 70%;
 }
 
-
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
-nav{
-    background: var(--primaryColor);
-    padding: 30px 20px 140px 0px;
-    border-bottom-left-radius: 180px;
-    border-bottom-right-radius: 180px;   
+nav {
+  background: var(--primaryColor);
+  padding: 30px 20px 140px 0px;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 180px;
 }
 
-.left-logo{
-    background: white;
-    padding: 7px 10px ;
-    width: 40%;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
+.left-logo {
+  background: white;
+  padding: 7px 10px;
+  width: 40%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
-header{
-    padding: 40px 0 79px 0;
-    background-image: url('../img/decoration-bg.svg');
-    background-position: bottom right;
-    background-repeat: no-repeat;
+header {
+  padding: 40px 0 79px 0;
+  background-image: url("../img/decoration-bg.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
-
-
-.learn{
-    background-color: #F9F9FB;
-    padding: 80px 0;
-    background-image: url('../img/decoration-bg.svg');
-    background-position: bottom left;
-    background-repeat: no-repeat;
+.learn {
+  background-color: #f9f9fb;
+  padding: 80px 0;
+  background-image: url("../img/decoration-bg.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }
 
-.book{
-    background-image: url('../img/decoration-bg.svg');
-    background-position: 20% center;
-    background-repeat: no-repeat;
-
+.book {
+  background-image: url("../img/decoration-bg.svg");
+  background-position: 20% center;
+  background-repeat: no-repeat;
 }
 
-.reels-cover video{
-    height: 403px;
-    width: 100%;
+.reels-cover video {
+  height: 403px;
+  width: 100%;
 }
 
-.reels-cover > div{
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
+.reels-cover > div {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
-.reels-cover > div::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    /* background: #333; */
-    /* opacity: .2; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+.reels-cover > div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background: #333; */
+  /* opacity: .2; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.player-box{
-    position: absolute;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 100px;
-    padding: 14px;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+.player-box {
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 100px;
+  padding: 14px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
-.reels-cover{
-    margin-left: 10px ;
+.reels-cover {
+  margin-left: 10px;
 }
 
-.book{
-    padding: 130px 0;
+.book {
+  padding: 130px 0;
 }
 
-.instructor-box{
+.instructor-box {
+  background-color: var(--primaryColor);
+  padding: 120px 35px;
+  border-top-left-radius: 240px;
+  border-top-right-radius: 240px;
+  width: 120%;
+  margin-left: -11%;
+}
+
+footer {
+  background: #f9f9fb;
+  padding: 56px 0;
+}
+
+.footer-list {
+  background: white;
+  padding: 10px 12px;
+  border-radius: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .tm {
+    font-size: 50%;
+  }
+  .instructor-box {
     background-color: var(--primaryColor);
-    padding: 120px 35px;
-    border-top-left-radius: 240px;
-    border-top-right-radius: 240px;
-    width: 120%;
-    margin-left: -11%;
+    padding: 80px 35px;
+    border-radius: 20px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    padding: 253px 0 197px 0;
+  }
+
+  .finance-personal {
+    padding-bottom: 10px;
+    /* padding-top: 1px; */
+    /* border-bottom: 4px solid var(--primaryColor); */
+  }
+
+  .footer-list {
+    background: none;
+  }
 }
-
-footer{
-    background: #F9F9FB;
-    padding: 56px 0;
-}
-
-.footer-list{
-    background: white;
-    padding: 10px 12px;
-    border-radius: 9px;
-}
-
-@media screen and (min-width : 768px) {
-    .tm{
-        font-size: 50%;
-       
-    }
-    .instructor-box{
-        background-color: var(--primaryColor);
-        padding: 80px 35px;
-        border-radius: 20px;
-        width: 88%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header{
-        padding: 253px 0 197px 0;
-    }
-
-    .finance-personal{
-        padding-bottom: 10px;
-        /* padding-top: 1px; */
-        /* border-bottom: 4px solid var(--primaryColor); */
-    }
-
-    .footer-list{
-        background: none;
-    }
-}
-
-
 
 /* slick */
-#slickReels > button{
-    position: absolute;
-   
+#slickReels > button {
+  position: absolute;
 }
 
-#slickReels{
-    padding: 40px 0;
+#slickReels {
+  padding: 40px 0;
 }
 
 /* #slickReels */
 
-#slickReels > button:first-child{
-    top: 0%;
-    left: 83%;
-    border-radius: 100px;
-    background-image: url('../img/icons/arrow-left.svg');
-    background-position: center center;
-    background-size: cover;
+#slickReels > button:first-child {
+  top: 0%;
+  left: 83%;
+  border-radius: 100px;
+  background-image: url("../img/icons/arrow-left.svg");
+  background-position: center center;
+  background-size: cover;
 }
-#slickReels > button:last-child{
-    top: 0%;
-    left: 92%;
-    border-radius: 100px;
-    background-image: url('../img/icons/arrow-right.svg');
-    background-position: center center;
-    background-size: cover;
+#slickReels > button:last-child {
+  top: 0%;
+  left: 92%;
+  border-radius: 100px;
+  background-image: url("../img/icons/arrow-right.svg");
+  background-position: center center;
+  background-size: cover;
 }
-#slickReels > button::before{
-    font-size: 0;
+#slickReels > button::before {
+  font-size: 0;
 }
 
-@media screen and (min-width:768px) {
-    #slickReels > button:first-child{
-        top: 107%;
-        left: 0%;
-    }
-    #slickReels > button:last-child{
-        top: 107%;
-        left: 4%;
-    }
+@media screen and (min-width: 768px) {
+  #slickReels > button:first-child {
+    top: 107%;
+    left: 0%;
+  }
+  #slickReels > button:last-child {
+    top: 107%;
+    left: 4%;
+  }
 }

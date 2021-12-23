@@ -137,20 +137,6 @@
       </div>
     </div>
 
-    <!-- <div class="book d-none d-md-block">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-3">
-                    <img src="assets/img/book.svg" alt="" srcset="">
-                </div>
-                <div class="col-md-3">
-                    <h2>Bookworm?</h2>
-                    <p class="color-gray">We got you covered.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="instructor d-none d-md-block my-5">
       <div class="container">
         <div class="instructor-box">
@@ -165,72 +151,73 @@
                 <div class="modal-content py-2 px-3">
                   <button type="button" class="btn-close dismiss d-block ms-auto my-3 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
                   <div class="modal-body">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="mt-3 d-flex flex-column">
-                          <label for="" class="form-label">Your Name</label>
-                          <input type="text" placeholder="Johnny Appleseed" class="custom-input-rounded" maxlength="300" />
+                    <form name="HNST-Form-Dekstop">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mt-3 d-flex flex-column">
+                            <label for="" class="form-label">Your Name</label>
+                            <input type="text" placeholder="Johnny Appleseed" class="custom-input-rounded" maxlength="300" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mt-3 d-flex flex-column">
-                          <label for="" class="form-label">Your Username</label>
-                          <input type="text" placeholder="YourName@gmail.com" class="custom-input-rounded" maxlength="300" />
+                        <div class="col-md-6">
+                          <div class="mt-3 d-flex flex-column">
+                            <label for="" class="form-label">Your Username</label>
+                            <input type="text" placeholder="YourName@gmail.com" class="custom-input-rounded" maxlength="300" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mt-3 d-flex flex-column">
-                          <label for="" class="form-label">What course topic would you like to teach?</label>
-                          <div class="position-relative custom-select-field mt-3">
-                            <select class="custom-select" onchange="selectClick(this)" onclick="selectClick(this)">
-                              <option value="" disabled selected>Chess ♟️</option>
-                              <option value="Piano 🎹">Piano 🎹</option>
-                              <option value="Blackjack 🃏">Blackjack 🃏</option>
-                              <option value="Bodybuilding 🏋">Bodybuilding 🏋</option>
-                              <option value="Econ 101 📊">Econ 101 📊</option>
-                              <option value="Photography 📷">Photography 📷</option>
-                              <option value="Guitar 🎸">Guitar 🎸</option>
-                              <option value="YouTube ▶️">YouTube ▶️</option>
-                              <option value="Writing ✍️">Writing ✍️</option>
-                              <option value="Speed Reading 📚">Speed Reading 📚</option>
-                              <option value="Personal Finance 💸">Personal Finance 💸</option>
-                              <option value="Software 🧑‍💻">Software 🧑‍💻</option>
-                              <option value="Français 🇫🇷">Français 🇫🇷</option>
-                              <option value="Drawing 🎨">Drawing 🎨</option>
-                              <option value="Copyright Law ⚖️">Copyright Law ⚖️</option>
-                              <option value="Poker 🃏">Poker 🃏</option>
-                              <option value="Filmmaking 🎬">Filmmaking 🎬</option>
-                              <option value="Calculus 📐">Calculus 📐</option>
-                              <option value="Investing 📈">Investing 📈</option>
-                            </select>
-                            <ul class="custom-select-list d-none"></ul>
+                        <div class="col-md-12">
+                          <div class="mt-3 d-flex flex-column">
+                            <label for="" class="form-label">What course topic would you like to teach?</label>
+                            <div class="position-relative custom-select-field mt-3">
+                              <select class="custom-select" onchange="selectClick(this)" onclick="selectClick(this)">
+                                <option value="" disabled selected>Chess ♟️</option>
+                                <option value="Piano 🎹">Piano 🎹</option>
+                                <option value="Blackjack 🃏">Blackjack 🃏</option>
+                                <option value="Bodybuilding 🏋">Bodybuilding 🏋</option>
+                                <option value="Econ 101 📊">Econ 101 📊</option>
+                                <option value="Photography 📷">Photography 📷</option>
+                                <option value="Guitar 🎸">Guitar 🎸</option>
+                                <option value="YouTube ▶️">YouTube ▶️</option>
+                                <option value="Writing ✍️">Writing ✍️</option>
+                                <option value="Speed Reading 📚">Speed Reading 📚</option>
+                                <option value="Personal Finance 💸">Personal Finance 💸</option>
+                                <option value="Software 🧑‍💻">Software 🧑‍💻</option>
+                                <option value="Français 🇫🇷">Français 🇫🇷</option>
+                                <option value="Drawing 🎨">Drawing 🎨</option>
+                                <option value="Copyright Law ⚖️">Copyright Law ⚖️</option>
+                                <option value="Poker 🃏">Poker 🃏</option>
+                                <option value="Filmmaking 🎬">Filmmaking 🎬</option>
+                                <option value="Calculus 📐">Calculus 📐</option>
+                                <option value="Investing 📈">Investing 📈</option>
+                              </select>
+                              <ul class="custom-select-list d-none"></ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="mt-3 d-flex flex-column">
+                            <label for="" class="form-label">Why are you the best person to teach this course?</label>
+                            <textarea name="" placeholder="I’m the best person to teach this course because ..." class="custom-input-rounded" id="" cols="30" rows="10" maxlength="300"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="mt-3 d-flex flex-column">
+                            <label for="" class="form-label">Do you have a YouTube channel or large social media following?</label>
+                            <textarea
+                              name=""
+                              placeholder="Yeah! I have XYZ subscribers. Here’s the URL to my channel: YouTube.com/c/HowNotToSuckAt"
+                              class="custom-input-rounded"
+                              id=""
+                              cols="30"
+                              rows="10"
+                              maxlength="300"
+                            ></textarea>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="mt-3 d-flex flex-column">
-                          <label for="" class="form-label">Why are you the best person to teach this course?</label>
-                          <textarea name="" placeholder="I’m the best person to teach this course because ..." class="custom-input-rounded" id="" cols="30" rows="10" maxlength="300"></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mt-3 d-flex flex-column">
-                          <label for="" class="form-label">Do you have a YouTube channel or large social media following?</label>
-                          <textarea
-                            name=""
-                            placeholder="Yeah! I have XYZ subscribers. Here’s the URL to my channel: YouTube.com/c/HowNotToSuckAt"
-                            class="custom-input-rounded"
-                            id=""
-                            cols="30"
-                            rows="10"
-                            maxlength="300"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
 
-                    <button class="dismiss d-none" data-bs-dismiss="modal"></button>
-                    <button class="button button-primary mt-3 ms-auto d-block" onclick="confirmSubmit()">Submit</button>
+                      <button class="button button-primary mt-3 ms-auto d-block">Submit</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -239,25 +226,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="d-md-none my-3  py-3">
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
-
-            <br>
-            <br>
-            <h2 class="text-center">New Product</h2>
-            <br>
-            <p class="text-center mx-auto" style="width: 90%;">Nothing is complicated. Everything you need to know about
-                everything!</p>
-        </div>
-
-
-    </div> -->
 
     <footer class="px-2 px-md-0">
       <div class="container">
@@ -418,6 +386,12 @@
       </div>
     </div>
 
+    <div class="loading-container">
+      <p class="text-center font-medium">Loading...</p>
+      <div class="progress-container">
+        <div id="loading"></div>
+      </div>
+    </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -463,11 +437,60 @@
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwL5cmtENVqKvrZ6QTYcusFtOq5QoOUx_8GNSdU9cw1wpAo01Yu7HjZNI1xSGckrVTz/exec";
       const form = document.forms["HNST-Form"];
+      const formDekstop = document.forms["HNST-Form-Dekstop"];
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
+        const button = form.querySelector("button");
+        button.innerHTML = `<div class="spinner-border text-warning" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>`;
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => {
+            Swal.fire("Success", "Your Form Was Submitted", "success");
+            button.innerHTML = "Submit";
+            const modal = document.querySelectorAll(".modal");
+            const modalBackdrop = document.querySelectorAll(".modal-backdrop");
+            modal.forEach((m) => {
+              m.style.display = "none";
+              $(m).find(".dismiss").trigger({
+                type: "click",
+              });
+            });
+            modalBackdrop.forEach((m) => {
+              m.classList.remove("show");
+            });
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+      formDekstop.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const button = formDekstop.querySelector("button");
+        button.innerHTML = `<div class="spinner-border text-warning" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>`;
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => {
+            Swal.fire("Success", "Your Form Was Submitted", "success");
+            button.innerHTML = "Submit";
+            const modal = document.querySelectorAll(".modal");
+            const modalBackdrop = document.querySelectorAll(".modal-backdrop");
+            modal.forEach((m) => {
+              m.style.display = "none";
+              $(m).find(".dismiss").trigger({
+                type: "click",
+              });
+            });
+            modalBackdrop.forEach((m) => {
+              m.classList.remove("show");
+            });
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
