@@ -67,10 +67,12 @@
         <p class="text-center text-22 d-none d-md-block">Nothing is complicated.</p>
         <br />
         <br />
-        <div class="d-flex flex-column flex-md-row justify-content-center">
-          <input type="text" class="custom-input" placeholder="Your email address" maxlength="300" />
-          <button style="height: 51px" class="button button-primary ms-md-4 align-self-center w-fit d-block mt-3 mt-md-0">Sign Up</button>
-        </div>
+        <form name="HNST-Email">
+          <div class="d-flex flex-column flex-md-row justify-content-center">
+            <input type="email" name="email" class="custom-input" placeholder="Your email address" maxlength="300" />
+            <button style="height: 51px" type="submit" class="button button-primary ms-md-4 align-self-center w-fit d-block mt-3 mt-md-0">Sign Up</button>
+          </div>
+        </form>
       </div>
     </header>
 
@@ -374,37 +376,6 @@
     </script>
 
     <!-- submit form -->
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwL5cmtENVqKvrZ6QTYcusFtOq5QoOUx_8GNSdU9cw1wpAo01Yu7HjZNI1xSGckrVTz/exec";
-      const form = document.forms["HNST-Form"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const button = form.querySelector("button");
-        button.innerHTML = `<div class="spinner-border text-warning" role="status">
-                              <span class="visually-hidden">Loading...</span>
-                            </div>`;
-        fetch(scriptURL, {
-          method: "POST",
-          body: new FormData(form),
-        })
-          .then((response) => {
-            Swal.fire("Success", "Your Form Was Submitted", "success");
-            button.innerHTML = "Submit";
-            const modal = document.querySelectorAll(".modal");
-            const modalBackdrop = document.querySelectorAll(".modal-backdrop");
-            modal.forEach((m) => {
-              m.style.display = "none";
-              $(m).find(".dismiss").trigger({
-                type: "click",
-              });
-            });
-            modalBackdrop.forEach((m) => {
-              m.classList.remove("show");
-            });
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <script src="assets/js/action/form.js"></script>
   </body>
 </html>
