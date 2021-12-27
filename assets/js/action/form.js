@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
     body: new FormData(form),
   })
     .then((response) => {
-      Swal.fire("Success", "Your Form Was Submitted", "success");
+      Swal.fire("Success", "Submission received! 👍", "success");
       button.innerHTML = "Submit";
       const modal = document.querySelectorAll(".modal");
       const modalBackdrop = document.querySelectorAll(".modal-backdrop");
@@ -38,7 +38,7 @@ form.addEventListener("submit", (e) => {
       });
     })
     .catch((error) => {
-      Swal.fire("Error", "Something Went Wrong When Send Your Email", "error");
+      Swal.fire("Error", "Submission Failed", "error");
       console.error("Error!", error.message);
     });
 });
