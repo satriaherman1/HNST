@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
     body: new FormData(form),
   })
     .then((response) => {
-      Swal.fire("Success", "Submission received! 👍", "success");
+      Swal.fire("Submission received! 👍");
       button.innerHTML = "Submit";
       const modal = document.querySelectorAll(".modal");
       const modalBackdrop = document.querySelectorAll(".modal-backdrop");
@@ -38,7 +38,7 @@ form.addEventListener("submit", (e) => {
       });
     })
     .catch((error) => {
-      Swal.fire("Error", "Submission Failed", "error");
+      Swal.fire("Error", "Something Went Wrong When Send Your Email", "error");
       console.error("Error!", error.message);
     });
 });
@@ -57,7 +57,7 @@ formEmail.addEventListener("submit", (e) => {
   })
     .then((response) => {
       input.value = "";
-      Swal.fire("Success", "Your Email Was sent", "success");
+      Swal.fire("Submission received! 👍");
       button.innerHTML = "Sign Up";
     })
     .catch((error) => {
